@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2018 MSM-Xtended Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/x_settings_title" >
+
+        <!-- xtended Logo Header -->
+        <Preference
+        android:key="xtended_about"
+        android:layout="@layout/xtended_about" />
+
+        <!-- Theme Room -->
+        <com.msm.xtended.ui.XtendedPreference
+            android:key="theme_room"
+            android:title="@string/themeroom_title"
+            android:fragment="com.android.settings.xtended.XThemeRoom"
+            android:icon="@drawable/ic_x_themeroom" />
+
+        <!-- Buttons -->
+        <com.msm.xtended.ui.XtendedPreference
+            android:key="buttonsettings_category"
+            android:title="@string/button_title"
+            android:fragment="com.msm.xtended.fragments.ButtonSettings"
+            android:icon="@drawable/ic_x_buttons" />
+
+        <!-- XDecor Room -->
+        <com.msm.xtended.ui.XtendedPreference
+            android:key="decorroom_category"
+            android:title="@string/decorroom_title"
+            android:fragment="com.msm.xtended.fragments.XDecorRoom"
+            android:icon="@drawable/ic_x_decorroom" />
+
+        <!-- Gestures -->
+        <com.msm.xtended.ui.XtendedPreference
+            android:key="gestures_category"
+            android:title="@string/gestures_title"
+	    android:fragment="com.msm.xtended.fragments.GestureSettings"
+            android:icon="@drawable/ic_x_gestures" />
+
+        <!-- Lock Screen -->
+        <com.msm.xtended.ui.XtendedPreference
+            android:key="lockscreen_category"
+            android:title="@string/lockscreen_title"
+   	    android:fragment="com.msm.xtended.fragments.LockScreenSettings"
+   	    android:icon="@drawable/ic_x_lockscreen" />
+
+        <!-- Navigation Bar -->
+        <com.msm.xtended.ui.XtendedPreference
+            android:key="navigationbar_category"
+            android:title="@string/navbar_title"
+            android:fragment="com.msm.xtended.fragments.NavbarSettings"
+            android:icon="@drawable/ic_x_navbars" />
+
+        <!-- Notifications -->
+        <com.msm.xtended.ui.XtendedPreference
+            android:key="notifications_category"
+            android:title="@string/notifications_title"
+            android:fragment="com.msm.xtended.fragments.NotificationSettings"
+            android:icon="@drawable/ic_x_notif"/>
+
+        <!-- Power Menu -->
+        <com.msm.xtended.ui.XtendedPreference
+            android:key="powermenu__category"
+            android:title="@string/powermenu_title"
+            android:fragment="com.msm.xtended.fragments.PowerMenuSettings"
+            android:icon="@drawable/ic_x_powermenu" />
+
+        <!-- Quick Settings panel -->
+        <com.msm.xtended.ui.XtendedPreference
+            android:key="quicksettings_category"
+            android:title="@string/quicksettings_title"
+            android:fragment="com.msm.xtended.fragments.QuickSettings"
+            android:icon="@drawable/ic_x_quicksettings"/>
+
+        <!-- Status Bar -->
+        <com.msm.xtended.ui.XtendedPreference
+            android:key="statusbar_category"
+            android:title="@string/statusbar_title"
+            android:fragment="com.msm.xtended.fragments.StatusBarSettings"
+            android:icon="@drawable/ic_x_statusbar" />
+
+        <!-- System -->
+        <com.msm.xtended.ui.XtendedPreference
+            android:key="system_category"
+            android:title="@string/system_title"
+            android:fragment="com.msm.xtended.fragments.SystemSettings"
+            android:icon="@drawable/ic_x_system" />
+	
+        <!-- Xtra -->
+        <com.msm.xtended.ui.XtendedPreference
+            android:key="xtra_category"
+            android:title="@string/xtra_title"
+            android:fragment="com.msm.xtended.fragments.XtraSettings"
+            android:icon="@drawable/ic_x_xtras" />
+
+</PreferenceScreen>
